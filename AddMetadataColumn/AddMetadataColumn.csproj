@@ -52,6 +52,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Tridion\Tridion2011\client\Tridion.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Tridion.ContentManager.Interop.cm_defines">
+      <HintPath>..\..\..\..\Tridion\Tridion2011\client\PIA\Tridion.ContentManager.Interop.cm_defines.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Tridion.ContentManager.Interop.cm_tom">
       <HintPath>..\..\..\..\Tridion\Tridion2011\client\PIA\Tridion.ContentManager.Interop.cm_tom.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
