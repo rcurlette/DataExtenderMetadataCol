@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3918ead2-ba1c-4250-b97f-1c6b445b5581" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CoreService.xsd" MetadataType="Schema" ID="00eb7114-ace5-4256-bf02-ee2be5441330" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CoreService1.xsd" MetadataType="Schema" ID="e6701e12-36c6-47a0-bbec-a92e81f530ef" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CoreService.wsdl" MetadataType="Wsdl" ID="024ac1c5-6de9-4f00-be0a-54bd6070879e" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CoreService2.xsd" MetadataType="Schema" ID="b9116a82-dd0b-45fc-8845-c3620ce80b43" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CoreService.disco" MetadataType="Disco" ID="becca4b4-a58b-4ea1-8ad4-bf3594db80cb" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?disco" />
+    <MetadataFile FileName="CoreService3.xsd" MetadataType="Schema" ID="2c2bebbc-7a21-467c-8280-0724c9f0b002" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CoreService2010.wsdl" MetadataType="Wsdl" ID="68555f13-5d70-47e5-b135-2dc099836c3a" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?wsdl" />
+    <MetadataFile FileName="CoreService4.xsd" MetadataType="Schema" ID="75a8644f-e579-43fd-ae57-53f67b231fcc" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CoreService5.xsd" MetadataType="Schema" ID="f6d5d120-820a-4cc9-a20e-8d2a7254cc59" SourceId="1" SourceUrl="http://tridcms.vega.test.tomtom.com/webservices/CoreService.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

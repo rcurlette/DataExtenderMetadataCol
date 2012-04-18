@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9355697-39CC-47DD-B4F3-AFB216A8EC07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AddMetadataColumn</RootNamespace>
+    <AssemblyName>AddMetadataColumn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tridion.Common, Version=6.1.0.25, Culture=neutral, PublicKeyToken=349a39f202fa9b53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Tridion\Tridion2011\client\Tridion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Tridion.ContentManager.Interop.cm_defines">
+      <HintPath>..\..\..\..\Tridion\Tridion2011\client\PIA\Tridion.ContentManager.Interop.cm_defines.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Tridion.ContentManager.Interop.cm_tom">
+      <HintPath>..\..\..\..\Tridion\Tridion2011\client\PIA\Tridion.ContentManager.Interop.cm_tom.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Tridion.Web.UI.Core, Version=6.1.0.55920, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Tridion\Tridion2011\client\WebUI\trace\Tridion.Web.UI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Tridion.Web.UI.Models.TCM54">
+      <HintPath>..\..\..\..\Tridion\Tridion2011\client\WebUI\Tridion.Web.UI.Models.TCM54.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMetadataColumn.cs" />
+    <Compile Include="Example.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CoreService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CoreServiceHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CoreServiceHandler.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ActivityInstanceData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ApplicationData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ClassificationInfoData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.DirectoryServiceUser.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.IdentifiableObjectData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.InstanceData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.ProcessHistoryData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublicationType.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublishContextData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublishInfoData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.PublishTransactionData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.QueueData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.QueueMessageData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.RenderedItemData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.RepositoryLocalObjectData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.SchemaFieldsData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.TemplateType.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.UserData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.VersionedItemData.datasource" />
+    <None Include="Properties\DataSources\Tridion.ContentManager.CoreService.Client.WindowsUser.datasource" />
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.ActionFlags.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.ActivityInstanceData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.ApplicationData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.ClassificationInfoData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.DirectoryServiceUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.IdentifiableObjectData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.InstanceData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.ProcessHistoryData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.PublicationType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.PublishContextData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.PublishInfoData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.PublishTransactionData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.QueueData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.QueueMessageData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.RenderedItemData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.RepositoryLocalObjectData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.SchemaFieldsData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.TemplateType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.UserData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.VersionedItemData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\AddMetadataColumn.CoreService.WindowsUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CoreService\CoreService.wsdl" />
+    <None Include="Service References\CoreService\CoreService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CoreService\CoreService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CoreService\CoreService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CoreService\CoreService2010.wsdl" />
+    <None Include="Service References\CoreService\CoreService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CoreService\CoreService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CoreService\CoreService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CoreService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CoreService\CoreService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CoreService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CoreService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CoreService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
