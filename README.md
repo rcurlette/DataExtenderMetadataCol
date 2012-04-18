@@ -5,13 +5,13 @@ Tridion-DataExtender-Add-Metadata-Column
      Tridion/bin/client/PIA
      - Tridion.ContentManager.Interop.cm_defines
      - Tridion.ContentManager.Interop.cm_tom
-    
+
      Tridion/bin/client
-     - Tridion.Common
-    
+      - Tridion.Common
+     
      Tridion/web/WebUI/WebRoot/bin
-     - Tridion.Web.UI.Core
-     - Tridion.Web.UI.Models.TCM54
+      - Tridion.Web.UI.Core
+      - Tridion.Web.UI.Models.TCM54
     
 - Set the metadata fieldname.  Open the AddMetadataColumn.cs file, change 'article_number' to your fieldname.
 - Compile.  Copy ALL files in the VS output folder (/bin/Debug) to the CMS Server at /Tridion/web/WebUI/WebRoot/bin.
